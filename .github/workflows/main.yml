@@ -17,5 +17,5 @@ jobs:
           server: 165.232.166.156
           username: bftp
           password: ${{ secrets.password }}
-          server-dir : gitpush
+          server-dir : gitpush/
   
