@@ -1,19 +1,21 @@
 on:
-  push:
-    branches:
-      - main
+    push:
+      branches:
+        - main
 name: Deploy website on push
 jobs:
-  web-deploy:
-    name: Deploy
-    runs-on: ubuntu-latest
-    steps:
-    - name: Get latest code
-      uses: actions/checkout@v3
-
-    - name: Push files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-      with:
-        server: ftp.fouraxiz.com
-        username: u602336656.4axiz
-        password: 4axiz.coM@123
+    web-deploy:
+      name: Deploy
+      runs-on: ubuntu-latest
+      steps:
+      - name: Get latest code
+        uses: actions/checkout@v3
+  
+      - name: Push files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: 165.232.166.156
+          username: bftp
+          password: ${{ secrets.password }}
+          server-dir : gitpush
+  
