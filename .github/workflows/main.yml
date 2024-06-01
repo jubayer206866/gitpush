@@ -14,7 +14,6 @@ jobs:
     - name: Push files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: 165.232.166.156
-        username: bftp
-        password: 4axiz.coM
-        server-dir : gitpush/
+        server: ftp.fouraxiz.com
+        username: u602336656.4axiz
+        password: 4axiz.coM@123
