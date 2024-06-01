@@ -18,3 +18,4 @@ on:
           username: bftp
           password: 4axiz.coM
           server-dir : gitpush/
+  
